@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>Cheap Motion Capture - Calibration</title>
+	<link rel="stylesheet" type="text/css" href="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/style.css"></head>
+
+<body topmargin="0" rightmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bottommargin="0" background="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/background.jpg">
+
+<center><table width="766" height="100%" cellspacing="0" cellpadding="0" border="0" background="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/mainbackground.jpg">
+  <tbody><tr valign="top"><td width="766">
+
+<table width="764" height="94
+" cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr valign="top">
+<td width="248"><!-- logo image --><!-- end logo image --></td>
+<td width="100%" background="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/logo.png">&nbsp;</td>
+	</tr>
+</tbody></table>
+<table width="764" height="42" cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr valign="top">
+<td width="169"><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/left1.jpg" alt="" width="169" height="42" border="0"></td>
+<td width="100%" background="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/left1bg.jpg"><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/left1bg.jpg" alt="" width="20" height="42" border="0"></td>
+	</tr>
+</tbody></table>
+
+<table width="764" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody><tr valign="top">
+
+<td width="150">
+<p>
+  <!-- menu below, copy and paste the menudivider.jpg code as necessary -->
+  <!-- the &nbsp; is code for a one letter space -->
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/index.html">Home</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp;<a href="http://motion.capture.free.fr/project.html"> The Project</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/network.html">Network</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/calibration.html">Calibration</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/iprocessing.html">Image Processing</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/reconstruction.html">3D Reconstruction</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/tracking.html">Tracking</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/opengl.html">OpenGL</a><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+&nbsp; <a href="http://motion.capture.free.fr/instructions.html">Instructions</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/ideas.html">Ideas</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/download.html">Download</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+  &nbsp; <a href="http://motion.capture.free.fr/team.html">Team</a><br>
+  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+</p>
+<!-- end menu --></td>
+<td width="10">&nbsp;</td>
+<td width="744">
+
+  <p align="center">
+    <!-- add your content below -->
+    <span class="Titles">Calibration<br>
+    </span></p>
+  <p><br>
+  <br>
+  <br>
+  Calibration is one of the most important step in the process : 
+withouth well calibrated cameras, we can't reconstruct the scene in 3D. 
+We must have exact data, that's why we have to take a lot of shots, to 
+compute each camera's parameters.<br>
+  <br>
+    There is two kind of data : Intrinsic Data, and Extrinsic Data.</p>
+  <p>The intrinsic matrix is computed with ~10 shots of the chessboard, 
+covering the whole scene. The shots can be independant between cameras.</p>
+  <p>The extrinsic matrix is computed with only 1 single shot of the 
+chessboard, which must be viewed by all the cameras : that allows us to 
+compute the positions and rotations of the cameras in the space.</p>
+  <h2>MatLab Handling:</h2>
+  <p>These 2 steps are made with MatLab. We use TOOLBOX_calib, available<a href="http://motion.capture.free.fr/download.html"> here</a>.
+ We have implemented a little "ad hoc" MatLab program to export data in a
+ file in the format the server can use, implemented in 
+CheapMocapCalib.m. Just clic "export" and call the file "camera0" to be 
+able to use it. It contains, in that order, the extrinsic translation 
+vector of the camera then, its extrinsic rotation matrix coefficients 
+and finally its 4 intrisic coefficients. all these data are sent to the 
+server when the client is asked to.</p>
+  <h2>Data processing:</h2>
+  <p>The extrinsic coefficients give the coordinates of the chess board 
+in the camera system. So we have to compute the positions in a common 
+coordinates system. </p>
+  <p align="center"><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/calibration_clip_image001.gif" alt="Coordinates sytem" width="588" height="205"></p>
+  <p>The sytem change formula is :</p>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <p>  <img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/calibration_clip_image001_0001.gif" alt="formulas" width="144" height="48" align="bottom"></p>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+  <p>After this manipulation, we got the extrinsic coodinates of the cameras in the chess board system.</p>
+  <p>We first wanted to have a "master camera" in wich all coordintes 
+are expressed, but we had to deal with some weird problems. So we left 
+the coordinates in the chess board system for instance.</p>
+  <p>Finally, we use the newly computed coordinates to draw the scene with openGL. See <a href="http://motion.capture.free.fr/opengl.html" title="3D Rendering">this section</a> for more details.</p>
+  <h1>How to calibrate:</h1>
+  <p>To calibrate you will need a chessboard picture (an A4 format one 
+is available in the toolbox archive but an A3 format is better). Then in
+ front of each camera, you have to show the chessboard in different 
+orientations. Nine snapshots are usually taken. Try to cover the entire 
+space in front of the camera as shown:</p>
+  <p align="center"><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/calib_snapshot.PNG" alt="Calibration Snapshots" width="340" height="222"></p>
+  <p>To compute extrinsic and intrinsic parameters, first unzip the toolbox archive then launch MatLab. Write <strong>:"addpath '$your_toolbox_calib_absolute_directory' -end". </strong></p>
+  <p>Then enter : "<strong>cd '$your_calib_image_directory</strong>'".</p>
+  <p>Now you can use <strong>"calib" </strong>function to begin the calibration. </p>
+  <p>Click on "<strong>images names</strong>" and follow the step. You should be show an image like the one above.</p>
+  <p>Now it's time for "<strong>Extract grid corners</strong>". Leave 
+all values by default. And click on each corner of the chess board. 
+(Caution: you will have to remember the order you clicked!). Enter the 
+dimensions of your grid and continue with the other pictures.</p>
+  <p>When you're done with the pictures, click on "<strong>Calibration</strong>". The program will compute the first approximation of intrinsic parameters. You can sharpen the precision by using "<strong>Recomp Corners</strong>" (leave the parameters by default) and then click on "<strong>Calibration</strong>".</p>
+  <p>Now you need the extrinsic parameters. Take an image where all cameras see the chessboard and click on "<strong>Comp. Extrinsic</strong>". Follow the steps. To see how was your calibration you can click on "<strong>Show Extrinsic</strong>" and "<strong>Reproject on images</strong>".</p>
+  <p align="center"><img src="Cheap%20Motion%20Capture%20-%20Calibration_arquivos/calib_extrinsic.PNG" alt="Show Extrinsic" width="503" height="308"></p>
+  <p>Final step : exportation. Click on "<strong>Export Calib Data</strong>" write : "camera0". Then place the file in the CheapMocapClient directory.</p>
+  <p>hint: use the clear all command between each calibration if you use the same MatLab session to calibrate all the cameras.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p></td>
+<td width="10">&nbsp;</td>
+	</tr>
+</tbody></table>
+</td></tr></tbody></table></center>
+
+
+</body></html>

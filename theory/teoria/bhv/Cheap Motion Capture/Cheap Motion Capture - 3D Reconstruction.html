@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>Cheap Motion Capture - 3D Reconstruction</title>
+	<link rel="stylesheet" type="text/css" href="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/style.css">
+    <style type="text/css">
+<!--
+.style1 {font-size: 10px}
+.style3 {font-size: 10px; font-weight: bold; }
+.style6 {font-size: 10px; font-style: italic; }
+-->
+    </style>
+</head>
+
+<body topmargin="0" rightmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bottommargin="0" background="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/background.jpg">
+
+<center>
+  <table width="765" height="100%" cellspacing="0" cellpadding="0" border="0" background="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/mainbackground.jpg">
+    <tbody><tr valign="top">
+      <td><table width="764" height="94
+" cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr valign="top">
+            <td width="248"><!-- logo image -->
+                <!-- end logo image --></td>
+            <td width="100%" background="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/logo.png">&nbsp;</td>
+          </tr>
+        </tbody></table>
+          <table width="764" height="42" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr valign="top">
+              <td width="169"><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/left1.jpg" alt="" width="169" height="42" border="0"></td>
+              <td width="100%" background="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/left1bg.jpg"><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/left1bg.jpg" alt="" width="20" height="42" border="0"></td>
+            </tr>
+          </tbody></table>
+        <table width="764" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr valign="top">
+              <td width="150"><!-- menu below, copy and paste the menudivider.jpg code as necessary -->
+                  <p>
+                  <!-- the &nbsp; is code for a one letter space -->
+                  <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/index.html">Home</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/project.html">The Project</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/network.html">Network</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/calibration.html">Calibration</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/iprocessing.html">Image Processing</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/reconstruction.html">3D Reconstruction</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/tracking.html">Tracking</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/opengl.html">OpenGL</a><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+&nbsp; <a href="http://motion.capture.free.fr/instructions.html">Instructions</a><br>
+                    <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/ideas.html">Ideas</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/download.html">Download</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                &nbsp; <a href="http://motion.capture.free.fr/team.html">Team</a><br>
+                <img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/menudivider.jpg" alt="" width="150" height="6" border="0"><br>
+                </p>
+                <!-- end menu --></td>
+              <td width="10">&nbsp;</td>
+              <td width="744"><p align="center">
+                  <!-- add your content below -->
+                  <span class="Titles">3D Reconstruction</span></p>
+                  <p align="justify"><strong>.</strong></p>
+                <p align="justify">To begin, we have the 2D position of 
+each point on the camera. And our goal is to reconstruct the 3D position
+ of this points. To simplify, we suppose that each camera see the point 
+we consider. To do our reconstruction, we need at least two 2D 
+coordinates, i.e. 2 cameras.<br>
+                  </p>
+                <p align="justify"><br>
+                      <strong>Notations:</strong><br>
+                  </p>
+                <p>We use the following notations :<br>
+                  - The 2D position mesured on the camera i is noted (Ui*,Vi*);<br>
+                  - (Ui,Vi) are the projected coordinates of a 3D point on the camera i.<br>
+                  - We note n the number of cameras.<br>
+                  - A 3D point is noted :</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/X.PNG" alt="3D coordinate" class="style1" width="82" height="113"></p>
+                <p>This point is written in homogeneous coordinate, it has also 4 coefficients.</p>
+                <p align="justify"><br>
+                  <strong>The P matrix :</strong><br>
+                  <br>
+                The matrix P is  a transformation matrix from 3D (world 
+locate) to 2D (camera locate). The expression is the following one :</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/P.PNG" alt="matrix P" width="353" height="140"></p>
+                <p>The matrix P is also a matrix exprimated with the 
+parameters sent by MATLAB. The matrix K is the matrix of intrinsic 
+parameters. fu and fv represent the focal distance of the camera, and u0
+ and v0 the the coordinates of the main point. R is the rotation matrix 
+(3x3) and T the translation vector (3x1).</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/K.PNG" alt="matrix K" width="150" height="85"></p>
+                <p>The P matrix of a camera llet us projecting the 3D coordinates on the camera. Indeed, we can compute Ui and Vi :</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/ui_vi.PNG" alt="Ui and Vi" width="220" height="80"></p>
+                <p><br>
+                  <strong>The problem :</strong></p>
+                <p>To find the 3D place of a point, we want to minimize 
+the distance between each measured position of the point on the camera 
+and its projected position. We sum up to this equation : </p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/ex.PNG" alt="e(x)" width="516" height="224"></p>
+                <p><br>
+                                                </p>
+                <p>Our goal is to minimize it, so we want to solve the equation <span class="style3">e(x)=0</span>.<br>
+                  </p>
+                <p>The precedent equation can be reasumed in this system : <br>
+                  </p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/system.PNG" alt="System" width="283" height="155"></p>
+                <p>Each Camera has 2 lignes in this equation. The matrix A is also a <span class="style3">2n x 4</span>matrix</p>
+                <p>Thus, we obtain a system that we can solve using the <span class="style3">SVD</span> developped in<span class="style6"> OpenCV</span>.</p>
+                <p>The principle of the <span class="style3">SVD</span> is t decompose the matrix A in that form : </p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/svd.PNG" alt="SVD" width="79" height="42"></p>
+                <p>U and V are two orthogonal matrices, and S is a diagonal one.</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/S.PNG" alt="S matrix" width="162" height="82"></p>
+                <p>The fonction <span class="style6">cvSVD</span> of <span class="style6">OpenCV</span> impose us to bring a square matrix. <br>
+                  Thus, if we have only two cameras seeing the point, A is square and we can apply this method.<br>
+                In the other cases, we use a easy way, which is to multiply A on the left by its transposed matrix. </p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/AtA.PNG" alt="AtA" width="312" height="40"></p>
+                <p>We obtain also a square matrix <span class="style3">4x4</span>, and we can apply the normal method.</p>
+                <p><span class="style6">cvSVD</span> returns us the matrices S and V. We search for the minimum value of in S.<br>
+                The diagonal matrix S is made of singular values. Then, 
+we have to search the minimum of these values and to take the 
+corresponding Vi (lign vector) corresponding.(Dim = 4). Thanks to this 
+vector, we have the 3D position X : </p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/vi.PNG" alt="Vi" width="150" height="50"></p>
+                <p>The solution is :</p>
+                <p><img src="Cheap%20Motion%20Capture%20-%203D%20Reconstruction_arquivos/solutions.PNG" alt="solution" width="150" height="100"></p>
+                <p>This method is a good one, but the problem is the 
+object we want to reconstruct is not ever seen by all the cameras. We 
+have to set in the matrix A only the cameras that see the object (at 
+least 2 cameras to reconstruct a point...)!</p>
+                <p>&nbsp;</p></td>
+              <td width="10">&nbsp;</td>
+            </tr>
+        </tbody></table></td>
+    </tr>
+  </tbody></table>
+</center>
+
+
+</body></html>

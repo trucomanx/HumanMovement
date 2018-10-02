@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+<link type="x-icon" href="http://www.mocapclub.com/images/favicon.ico" rel="shortcut icon">
+
+        <link type="ico" href="http://www.mocapclub.com/images/favicon.ico" rel="icon">
+		
+<title>MocapClub.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="MocapClub.com2_arquivos/osd.js"></script><script src="MocapClub.com2_arquivos/ca-pub-4159828663220264.js"></script><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style7 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.style9 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.style12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+.style13 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; }
+.style8 {font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="MocapClub.com2_arquivos/AC_ActiveX.html" type="text/javascript"></script>
+<script src="MocapClub.com2_arquivos/AC_RunActiveContent.html" type="text/javascript"></script>
+<link rel="preload" href="MocapClub.com2_arquivos/integrator_002.js" as="script"><script type="text/javascript" src="MocapClub.com2_arquivos/integrator_002.js"></script><link rel="preload" href="MocapClub.com2_arquivos/integrator.js" as="script"><script type="text/javascript" src="MocapClub.com2_arquivos/integrator.js"></script></head>
+
+<body bgcolor="#666666">
+<div align="center">
+  <ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins><table width="780" cellspacing="0" cellpadding="0" border="0" bgcolor="#666666">
+    <!--DWLayoutTable-->
+    <script type="text/javascript"><!--
+google_ad_client = "pub-4159828663220264";
+/* Ctrl Rig Tutorial p2 Top 728x90 12/13/09 */
+google_ad_slot = "9529270913";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="MocapClub.com2_arquivos/show_ads.js">
+</script>
+    <tbody><tr> 
+      <td width="28" height="18">&nbsp;</td>
+      <td colspan="8" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td width="23">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="10" valign="top" height="42"><div align="center"><span class="style8"><strong>Understanding Motion Builder’s IK/FK Control Rig Tutorial</strong></span></div></td>
+    </tr>
+    <tr>
+      <td height="3"></td>
+      <td width="134"></td>
+      <td width="73"></td>
+      <td width="101"></td>
+      <td width="119"></td>
+      <td width="86"></td>
+      <td width="14"></td>
+      <td width="57"></td>
+      <td width="145"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="856"></td>
+      <td colspan="8" valign="top"><p class="style9">By Ricardo Tobon</p>
+        <p class="style9" align="right">Page 2</p>
+        <p class="style9"><strong>Synchronization</strong></p>
+        <p class="style12">When keying on Full Body mode and Body Part 
+mode, Motion Builder keep the Control Rig synchronized for you. This 
+means that FK and IK controllers move together so you can blend 
+seamlessly between them.<br>
+          However when you key on Selection mode the Control Rig can get unsynchronized quickly.<br>
+          To illustrate this point make sure that Body Part is selected 
+in the Character Controls window. Select the Left Arm FK controller and 
+key it at frame 0 (fig 8).</p>
+        <p class="style12" align="center"><img src="MocapClub.com2_arquivos/Left%2520FK%2520Arm%2520Select%2520F8.jpg" width="700" height="496"><br>
+          Fig 8.</p>
+        <p class="style12">Go to frame 24 rotate the controller 70 degrees on the local Y axis and key frame.<br>
+          Switch the Keying Mode to Selection. Go to frame 0, select the Right Arm FK controller and key it. </p>
+      <p class="style12">Go to frame 24 rotate the controller 70 degrees
+ on the local Y axis and key frame. When you play the animation you will
+ see both arms go down at the same time (mov 1).</p>        <p class="style12">&nbsp;</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="325"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="4" valign="top"><p>
+        <embed src="MocapClub.com2_arquivos/Control%2520Rig%2520Arms%2520Down%2520Mov1.mov" width="320" height="255">
+      </p>        <p class="style12" align="center">Mov 1. </p>
+      <p class="style12" align="center">&nbsp;</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="99"></td>
+      <td colspan="8" valign="top"><p class="style12">Go to frame 24, 
+select the Left Wrist Effector and the Right Wrist Effector; activate 
+their Reach T and Reach R by setting them at a value of 100. You will 
+see the Right Arm go back to the original T position while the Left Arm 
+stays in place. When you play the animation the left arm still moves 
+down but the right stays up (mov 2).</p>
+      <p class="style12">&nbsp;</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="388"></td>
+      <td>&nbsp;</td>
+      <td colspan="6" valign="top"><p>
+        <embed src="MocapClub.com2_arquivos/One%2520Arm%2520Down%2520Mov2.mov" width="450" height="318">
+      </p>        <p class="style12" align="center">Mov 2. </p>
+      <p class="style12" align="center">&nbsp;</p></td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="906"></td>
+      <td colspan="8" class="style12" valign="top"><p>By activating 
+Reach T and the Reach R you are activating the IK controller. Since you 
+keyframed the left arm in Body Part mode keys where placed in the FK 
+components of the arm as well as the IK components keeping both 
+controllers synchronized. In contrast, when you keyed the right arm in 
+Selection mode you only keyed the selected bone so the IK components 
+were never selected or moved causing the FK controllers and the IK 
+controllers to become unsynchronized.</p>
+        <p class="style9"><strong>Linear and Arched Trajectories</strong></p>
+        <p>Depending on which type of controllers are driving the rig (FK or IK) your character might move different between poses.<br>
+          To illustrate this concept re-open the MocapGuy.fbx file to 
+make sure that there is no previous animation on the rig and that we 
+have the original settings on the controllers.<br>
+          Make sure that you are on Body Part Keying Mode on the 
+Character Controls Window. Go to frame 0 and key the LeftWristEffector 
+and the RightWristEffector, go to frame 24 and pose the left and right 
+arms so they look like figure 9, key-frame them (fig 9). You need to 
+adjust the position of the shoulders in order to be able to achieve the 
+desired pose.</p>
+        <p align="center"><img src="MocapClub.com2_arquivos/Control%2520Rig%2520Arms%2520Up%2520F9.jpg" width="669" height="442"><br>
+          Fig 9.</p>
+        <p>Since we have been keying on Body Part mode, every element of
+ both arms has been key framed and the FK controllers as well as the IK 
+controllers are synchronized. <br>
+          Even if the key-framed poses are similar the movement of a 
+limb is very different when it is being control by FK or by IK.<br>
+        Select the RightWristEffector and turn on the Reach T and the 
+Reach R values by setting them to a 100. Ctrl select the 
+LeftWristEffector and turn on trajectories to see the difference in 
+movement between the arms (Mov 3).</p>
+        <p><br>
+      </p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="325"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="4" valign="top"><p>
+        <embed src="MocapClub.com2_arquivos/Control%2520Rig%2520Arms%2520Up%2520Mov3.mov" width="320" height="255">
+      </p>        <p class="style12" align="center">Mov 3. </p>
+      <p class="style12" align="center">&nbsp;</p></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="134"></td>
+      <td colspan="8" valign="top"><p class="style12">Of course the left
+ arm which is driven by FK controllers moves more natural because it 
+moves in an arc which is one of the basic principles of animation. </p>
+      <p class="style12">Although when you are selecting elements in the
+ Character Controls window you are basically posing your character 
+through the use of IK controllers. But until you activate the Reach T 
+and Reach R of a section, you will be driving its elements with the FK 
+controllers.</p>        <p class="style12">&nbsp; </p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="19"></td>
+      <td colspan="8" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="19"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td valign="top"><div align="center"><span class="style7"><a href="http://www.mocapclub.com/Pages/UndsCtrlRig01.htm">Back</a></span></div></td>
+      <td>&nbsp;</td>
+      <td class="style7" valign="top"><div align="center"><a href="http://www.mocapclub.com/Pages/UndsCtrlRig03.htm">Next</a></div></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="19"></td>
+      <td colspan="8" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="19"></td>
+      <td colspan="8" class="style7" valign="top"><div align="center"><a href="http://www.mocapclub.com/Pages/Tutorials.htm">Tutorials Main</a>
+        <div>
+          <p>&nbsp;</p>
+          <script type="text/javascript"><!--
+google_ad_client = "pub-4159828663220264";
+/* Ctrl Rig Tutorial p2 Bottom728x90 12/13/09 */
+google_ad_slot = "7221498316";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="MocapClub.com2_arquivos/show_ads.js">
+</script><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins>
+          <p>&nbsp;</p>
+        </div>
+      </div></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td height="50"></td>
+      <td colspan="8" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="10" valign="top" height="65"><img src="MocapClub.com2_arquivos/PageBottom.jpg" width="780" height="65"></td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<iframe id="google_osd_static_frame_6597593811886" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>
